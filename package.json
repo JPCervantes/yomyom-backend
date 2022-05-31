@@ -1,0 +1,22 @@
+{
+  "name": "yomyom_test",
+  "version": "1.0.0",
+  "description": "YomYom test app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.tsx",
+    "dev": "nodemon src/app.tsx"
+  },
+  "author": "Juan Pablo Cervantes",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.36",
+    "@types/webpack-env": "^1.17.0",
+    "nodemon": "^2.0.16"
+  }
+}
