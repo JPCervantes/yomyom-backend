@@ -10,28 +10,28 @@ Try on console this commands to check if you have installed this programs:
 
     node --version
 
-> > > v16.13.2
+> v16.13.2
 
     npm --version
 
-> > > 8.1.2
+> 8.1.2
 
 Open a MySQL 8.0 CLI , login and type:
 
     SELECT VERSION();
 
-+-----------+
-| VERSION() |
-+-----------+
-| 8.0.29 |
-+-----------+
-1 row in set (0.00 sec)
+> +-----------+
+> | VERSION() |
+> +-----------+
+> | 8.0.29 |
+> +-----------+
+> 1 row in set (0.00 sec)
 
 On console type:
 
     git --version
 
-> > > git version 2.33.0.windows.2
+> git version 2.33.0.windows.2
 
 If one or more of this commands don't displays a similar response like last ones,
 try to install or reinstall following this instructions:
@@ -84,8 +84,8 @@ Now use the follow script to start the server:
 
 You will recibe the following response:
 
-> > yomyom_test@1.0.0 start
-> > node src/app.tsx
+> yomyom_test@1.0.0 start
+> node src/app.tsx
 
 > Server is running at http://localhost:8080
 > Database connected successfully!
