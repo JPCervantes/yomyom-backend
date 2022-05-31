@@ -24,17 +24,6 @@ router.get('/:id', (req, res) => {
     });
   });
 
-  // router.get('/:id?hour', (req, res) => {
-  //   const { id } = req.params; 
-  //   mysqlcon.query('SELECT * FROM plates WHERE id = ? AND hour > timestart AND hour < timeend', [id], (err, rows, fields) => {
-  //     if (!err) {
-  //       res.json(rows[0]);
-  //     } else {
-  //       console.log(err);
-  //     }
-  //   });
-  // });
-
 
 router.post('/', (req, res) => {
     const { id, name, active, price, categoryId } = req.body;

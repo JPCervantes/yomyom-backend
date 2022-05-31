@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const mysqlcon = require('../database');
+require('dotenv').config()
 
 const loadDataQuery = `CREATE TABLE if not exists categories (
     id int NOT NULL AUTO_INCREMENT,
@@ -84,9 +85,9 @@ const loadDataQuery = `CREATE TABLE if not exists categories (
   `
 
 
-router.get("/", (req, res) => {
+router.get('/', (req, res) => {
   
-    const databaseName = "yomyom_test";
+    const databaseName = process.env.DATABASE_NAME;
     const createQuery = `CREATE DATABASE IF NOT EXISTS ${databaseName}`;
   
     // use the query to create a Database.
@@ -94,18 +95,18 @@ router.get("/", (req, res) => {
         mysqlcon.query(createQuery, (err) => {
             if(err) throw err;
     
-            console.log("Database Created Successfully !");
+            console.log('Database Created Successfully !');
     
             const useQuery = `USE ${databaseName}`;
             mysqlcon.query(useQuery, (error) => {
                 if(error) throw error;
     
-                console.log("Using Database");
+                console.log('Using Database');
                 
                 mysqlcon.query(loadDataQuery, (error) => {
                     if(error) throw error;
         
-                    console.log("Data load into Database");
+                    console.log('Data load into Database');
 
                 return res.send(`Created and Using ${databaseName} Database with data loaded successfully!!!`);
                 })

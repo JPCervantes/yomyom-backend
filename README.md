@@ -61,7 +61,7 @@ Clone the repository:
 
     git clone https://github.com/JPCervantes/yomyom-backend.git
 
-You recibe this response:
+You receive this response:
 
 > Cloning into 'yomyom-backend'...
 > remote: Enumerating objects: 3, done.
@@ -78,28 +78,34 @@ Install all the dependencies with:
 
     npm install
 
+You must get the following prompt:
+
+> added 189 packages, and audited 190 packages in 19s
+> 23 packages are looking for funding
+> run `npm fund` for details
+> found 0 vulnerabilities
+
 Now use the follow script to start the server:
 
     npm start
 
-You will recibe the following response:
+You will receive the following response:
 
 > yomyom_test@1.0.0 start
 > node src/app.tsx
-
 > Server is running at http://localhost:8080
 > Database connected successfully!
 
 The first time you start the server you must access to the following route to create the database
-and load the data:
+and load up the data:
 
 [http://localhost:8080]
 
-You will recibe the following display on browser screen:
+You will receive the following display on browser screen:
 
 > Created and Using yomyom_test Database with data loaded successfully!!!
 
-You will recibe the following prompt in console:
+You will receive the following prompt in console:
 
 > Database Created Successfully !
 > Using Database
@@ -109,9 +115,10 @@ Now you can access to the following address:
 
 [http://localhost:8080/api/v1/categories]
 
-If you recibe the following json response the installation was successfully:
+If you get the following json response the installation was successfully:
 
 > [{"id":1,"name":"Bebidas","active":1,"timestart":"08:00:00","timeend":"22:00:00"},
+>
 > > {"id":2,"name":"Desayunos","active":1,"timestart":"08:00:00","timeend":"13:00:00"},
 > > {"id":3,"name":"Comidas","active":1,"timestart":"13:00:00","timeend":"18:00:00"},
 > > {"id":4,"name":"Postres","active":1,"timestart":"08:00:00","timeend":"22:00:00"},
