@@ -37,7 +37,6 @@ router.post('/', (req, res) => {
     mysqlcon.query(query, [id, name, active, timestart, timeend], (err, rows, fields) => {
         if(!err) {
         res.json({status: 'Category saved'});
-        console.log('response on bk:', res)
         } else {
         console.log(err);
         }
