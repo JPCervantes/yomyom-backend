@@ -12,7 +12,7 @@ const loadDataQuery = `CREATE TABLE if not exists categories (
   PRIMARY KEY (id)
 ) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 LOCK TABLES categories WRITE;
-INSERT IGNORE INTO categories VALUES (1,'Bebidas',1,'08:00:00','22:00:00'),(2,'Desayunos',1,'08:00:00','13:00:00'),(3,'Comidas',1,'13:00:00','18:00:00'),(4,'Postres',1,'08:00:00','22:00:00'),(5,'Licores',1,'13:00:00','22:00:00');
+INSERT IGNORE INTO categories VALUES (1,'Bebidas',1,'08:00:00','22:00:00'),(2,'Desayunos',1,'08:00:00','13:00:00'),(3,'Comidas',1,'13:00:00','18:00:00'),(4,'Postres',1,'18:00:00','20:00:00'),(5,'Licores',1,'20:00:00','22:00:00');
 UNLOCK TABLES;
 
 CREATE DEFINER='root'@'localhost' PROCEDURE IF NOT EXISTS categoriesAddOrEdit(
